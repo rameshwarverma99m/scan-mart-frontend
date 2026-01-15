@@ -1,16 +1,65 @@
-# cart_app
+# scan-mart-frontend
 
-A new Flutter project.
+A Flutter application for Scan Mart with login, signup, and dashboard functionality.
+
+## Features
+
+- **Login Screen**: Mobile/Email and Password authentication
+- **Signup Screen**: Username, Mobile, Email, and Password registration
+- **Dashboard Screen**: Main dashboard with quick actions and statistics
+- **Reusable Components**: Custom text fields and buttons
+- **Color Constants**: Centralized color management
+
+## Project Structure
+
+```
+lib/
+├── constants/
+│   └── colors.dart          # App color constants
+├── widgets/
+│   ├── custom_button.dart   # Reusable button widget
+│   └── custom_text_field.dart # Reusable text field widget
+├── screens/
+│   ├── login_screen.dart    # Login screen
+│   ├── signup_screen.dart   # Signup screen
+│   └── dashboard_screen.dart # Dashboard screen
+└── main.dart                # App entry point
+```
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   flutter pub get
+   ```
+3. Run the app:
+   ```bash
+   flutter run
+   ```
 
-A few resources to get you started if this is your first Flutter project:
+## Dependencies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter SDK
+- cupertino_icons
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screens
+
+### Login Screen
+- Mobile Number or Email input
+- Password input with visibility toggle
+- Navigation to signup screen
+- Forgot password link
+
+### Signup Screen
+- Username input
+- Mobile number input (10 digits)
+- Email input
+- Password input with visibility toggle
+- Form validation for all fields
+
+### Dashboard Screen
+- Welcome card
+- Statistics cards
+- Quick action buttons
+- Logout functionality
